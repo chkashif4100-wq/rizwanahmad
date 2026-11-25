@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="The personal student website of Ahmed Raza.">
+  <title>Ahmed Raza | Student Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#home" aria-label="Ahmed Raza home"><span class="brand-mark">A</span> Ahmed Raza</a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Open navigation" aria-expanded="false">☰</button>
+    <nav class="navigation" id="navigation">
+      <a href="#home" class="nav-link active">Home</a>
+      <a href="#about" class="nav-link">About</a>
+      <a href="#hobbies" class="nav-link">Hobbies</a>
+      <a href="#contact" class="nav-link">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero section" id="home">
+      <div class="hero-copy">
+        <p class="eyebrow">HELLO, WELCOME TO MY WEBSITE</p>
+        <h1>Hi, I'm <span>Ahmed Raza</span></h1>
+        <h2>A student with big dreams.</h2>
+        <p class="hero-description">I'm 14 years old and studying in O1 at St. Anthony High School. This is my little corner of the internet where you can get to know me.</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#about">Get to know me <span>→</span></a>
+          <a class="button button-outline" href="#contact">Contact me</a>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <div class="photo-ring">
+          <img src="profile.jpg" alt="Ahmed Raza profile picture" onerror="this.style.display='none'; this.nextElementSibling.style.display='grid';">
+          <div class="photo-fallback">AR</div>
+        </div>
+        <div class="floating-note"><span>✦</span> Always learning</div>
+        <div class="decor decor-one"></div><div class="decor decor-two"></div>
+      </div>
+    </section>
+
+    <section class="section about-section" id="about">
+      <div class="section-heading">
+        <p class="eyebrow">A LITTLE INTRODUCTION</p>
+        <h2>About <span>Me</span></h2>
+        <p>Here are a few things about who I am.</p>
+      </div>
+      <div class="about-card">
+        <div class="about-icon">✦</div>
+        <div>
+          <h3>My name is Ahmed Raza</h3>
+          <p>I am a 14-year-old student in O1 at St. Anthony High School. I enjoy learning new things, spending time on my hobbies, and making every day interesting. I believe that small steps and curiosity can lead to big achievements.</p>
+          <div class="details-grid">
+            <div class="detail"><span>NAME</span><strong>Ahmed Raza</strong></div>
+            <div class="detail"><span>AGE</span><strong>14 years</strong></div>
+            <div class="detail"><span>CLASS</span><strong>O1</strong></div>
+            <div class="detail"><span>SCHOOL</span><strong>St. Anthony High School</strong></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section hobbies-section" id="hobbies">
+      <div class="section-heading">
+        <p class="eyebrow">THINGS I LOVE</p>
+        <h2>My <span>Hobbies</span></h2>
+        <p>These are some of my favourite ways to spend my free time.</p>
+      </div>
+      <div class="hobby-grid">
+        <article class="hobby-card">
+          <div class="hobby-icon book-icon">📚</div>
+          <h3>Reading Books</h3>
+          <p>I enjoy reading books, discovering new ideas, and exploring different worlds through stories.</p>
+        </article>
+        <article class="hobby-card">
+          <div class="hobby-icon pigeon-icon">🕊️</div>
+          <h3>Pigeons on the Roof</h3>
+          <p>I love spending time on my roof with pigeons and watching these beautiful birds.</p>
+        </article>
+        <article class="hobby-card">
+          <div class="hobby-icon cricket-icon">🏏</div>
+          <h3>Playing Cricket</h3>
+          <p>Cricket is one of my favourite games. I enjoy playing, practising, and having fun with friends.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section contact-section" id="contact">
+      <div class="section-heading">
+        <p class="eyebrow">SAY HELLO</p>
+        <h2>Contact <span>Me</span></h2>
+        <p>Here's the area where you can find me.</p>
+      </div>
+      <div class="contact-card">
+        <div class="contact-symbol">📍</div>
+        <div>
+          <h3>My Location</h3>
+          <p>Faisal Town, Pigeon Chowk, Lahore</p>
+        </div>
+      </div>
+      <p class="privacy-note">This is a student portfolio. For safety, please avoid sharing private contact details or your exact home address publicly.</p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <a class="brand footer-brand" href="#home"><span class="brand-mark">A</span> Ahmed Raza</a>
+    <p>Made with <span class="heart">♥</span> by Ahmed Raza</p>
+    <a class="back-top" href="#home">Back to top ↑</a>
+    <small>© <span id="year"></span> Ahmed Raza. All rights reserved.</small>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
